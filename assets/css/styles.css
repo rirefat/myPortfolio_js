@@ -257,9 +257,9 @@ img {
   font-size: var(--biggest-font-size);
 }
 
-.home__img{
-  width: 160px;
-}
+/* .home__img{
+  width: 350px;
+} */
 
 .home__handle{
   justify-self: center;
