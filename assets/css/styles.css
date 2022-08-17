@@ -246,7 +246,7 @@ img {
 
 .home__profession{
   color: var(--text-color);
-  margin-bottom: 2.5ren;
+  margin-bottom: 2.5rem;
 }
 
 .home__name{
@@ -272,9 +272,54 @@ img {
   overflow: hidden;
 }
 
-.home__button{
+.home__buttons{
   display: flex;
-  
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.home__social,
+.home__scroll{
+  position: absolute;
+}
+
+.home__social{
+  bottom: 5rem;
+  left: 0;
+  display: grid;
+  row-gap: 0.75rem;
+}
+
+
+.home__social-link{
+  width: max-content;
+  background-color: var(--container-color);
+  color: var(--first-color);
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  display: flex;
+  font-size: 1rem;
+  transition: 0.5s;
+}
+
+.home__social-link:hover{
+  transform: scale(1.2);
+  background-color: var(--first-color);
+  color: whitesmoke;
+}
+
+.home__social::after{
+  content: '';
+  width: 32px;
+  height: 2px;
+  background-color: var(--first-color);
+  transform: rotate(90deg) translate(16px,3px);
+}
+
+.home__scroll{
+  bottom: 5rem;
+  right: 0;
 }
 
 /*=============== BUTTONS ===============*/
