@@ -8,7 +8,7 @@
         <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
         <!--=============== BOXICONS ===============-->
-        <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
         <!--=============== SWIPER CSS ===============-->
         <link rel="stylesheet" href="">
@@ -21,14 +21,48 @@
     <body>
         <!--=============== HEADER ===============-->
         <header class="header" id="header">
-            
+            <nav class="nav containerr">
+                <a href="#" class="nav__logo">Rafiul</a>
+
+                <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class='bx bxs-home'></i>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class='bx bxs-user' ></i>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class='bx bxs-book-open'></i> 
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#work" class="nav__link">
+                                <i class='bx bxs-briefcase' ></i>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class='bx bxs-message-square-detail'></i>
+                            </a>
+                        </li>
+                    </ul>                    
+                </div>
+
+                <!--========= Theme Change Button =========-->
+                <i class='bx bx-moon change-theme' id="theme-button"></i>
+            </nav>
         </header>
 
         <!--=============== MAIN ===============-->
         <main class="main">
             <!--=============== HOME ===============-->
             <section class="home section" id="home">
-                
             </section>
             
             <!--=============== ABOUT ===============-->
