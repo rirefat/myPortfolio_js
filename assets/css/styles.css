@@ -318,8 +318,22 @@ img {
 }
 
 .home__scroll{
+  color: var(--first-color);
   bottom: 5rem;
-  right: 0;
+  right: -1.5rem;
+  display: grid;
+  row-gap: 1.5rem;
+  justify-items: center;
+}
+
+.home__scroll-icon{
+  font-size: 1.25rem;
+}
+
+.home__scroll-name{
+  font-size: var(--smaller-font-size);
+  transform: rotate(-90deg);
+  margin-top: 1.25rem;
 }
 
 /*=============== BUTTONS ===============*/
