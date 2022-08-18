@@ -678,7 +678,14 @@ img {
 .testimonial__description{
   font-size: var(--small-font-size);  
 }
+
 /* Swiper class */
+.swiper-pagination-bullet{
+  background: var(--text-color-light);
+}
+.swiper-pagination-bullet-active{
+  background: var(--first-color);
+}
 
 
 /*=============== CONTACT ===============*/
