@@ -675,6 +675,9 @@ img {
   margin-bottom: 1.25rem;
 }
 
+.testimonial__description{
+  font-size: var(--small-font-size);  
+}
 /* Swiper class */
 
 
