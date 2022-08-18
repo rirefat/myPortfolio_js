@@ -641,7 +641,39 @@ img {
 
 
 /*=============== TESTIMONIAL ===============*/
+.testimonial__card{
+  background-color: var(--container-color);
+  padding: 1.25rem 1.5rem;
+  border-radius: 1.5rem;
+  margin-bottom: 3rem;
+  position: relative;
+}
 
+.testimonial__card::before{
+  content: "\201E";
+  color: var(--body-color);
+  font-size: 20rem;
+  position: absolute;
+  top: -135%;
+  right: 10%;  
+}
+.testimonial__img{
+  width: 60px;
+  border-radius: 3rem;
+  margin-bottom: 1rem;
+}
+
+.testimonial__name{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: 0.25rem;
+}
+
+.testimonial__subtitle{
+  font-size: var(--small-font-size);
+  color: var(--first-color);
+  margin-bottom: 1.25rem;
+}
 
 /* Swiper class */
 
