@@ -133,9 +133,9 @@ body.light-theme{
     Color changes in some parts of 
     the website, in light theme
 ==========*/
-.light-theme .scroll-header{
-  /* box-shadow: 0 2px 4px hsla(0, 0%, 1%, 0.1); */
-}
+/* .light-theme .scroll-header{
+  box-shadow: 0 2px 4px hsla(0, 0%, 1%, 0.1);
+} */
 
 .light-theme .nav__menu{
   background-color: hsla(var(--second-hue), 32%, 85%, 0.9);
@@ -931,7 +931,45 @@ body.light-theme{
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+@media screen and (max-width: 320px) {
+  .nav__menu{
+    padding: 1rem 1.5rem;
+  }
 
+  .home__buttons{
+    flex-direction: column;
+  }
+
+  .home__handle{
+    width: 150px;
+    height: 253px;
+  }
+
+  .about__info{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skills__box{
+    column-gap: 1rem;
+  }
+
+  .skills_name{
+    font-size: var(--small-font-size);
+  }
+
+  .services__container{
+    grid-template-columns: 145px;
+    justify-content: center;
+  }
+  .work__item{
+    font-size: var(--small-font-size);
+  }
+
+  .work__filters{
+    column-gap: 00.25rem;
+    flex-wrap: wrap;
+  }
+}
 
 /* For medium devices */
 
