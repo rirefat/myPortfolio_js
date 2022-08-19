@@ -566,18 +566,18 @@
                         <form action="" class="contact__form">
                             <div class="contact__form-div">
                                 <label for="" class="contact__form-tag">Name</label>
-                                <input type="text" required placeholder="Insert Your Name*" class="contact__form-input">
+                                <input type="text" required placeholder="Insert Your Name*" class="contact__form-input" id="name">
                             </div>
                             <div class="contact__form-div">
                                 <label for="" class="contact__form-tag">Mail</label>
-                                <input type="email" required placeholder="Insert Your Email*" class="contact__form-input">
+                                <input type="email" required placeholder="Insert Your Email*" class="contact__form-input" id="email">
                             </div>
                             <div class="contact__form-div contact__form-area">
                                 <label for="" class="contact__form-tag">Project</label>
-                                <textarea name="" id="" cols="30" rows="10" required placeholder="Write Your Project Details*" class="contact__form-input"></textarea>
+                                <textarea name="" id="" cols="30" rows="10" required placeholder="Write Your Project Details*" class="contact__form-input" id="project"></textarea>
                             </div>
 
-                            <button class="button">Send Message</button>
+                            <button class="button" id="msg-button">Send Message</button>
                         </form>
                     </div>
                 </div>
@@ -627,6 +627,10 @@
 
         <!--============== MIXITUP FILTER ==============-->
         <script src="assets/js/mixitup.min.js"></script>
+
+        <!--================== Smtp JS =================-->
+        <script src="https://smtpjs.com/v3/smtp.js">
+        </script>
 
         <!--================= MAIN JS ==================-->
         <script src="assets/js/main.js"></script>
