@@ -718,6 +718,12 @@ body.light-theme{
   color: var(--body-color);
 }
 
+.show-more-button{
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /*=============== TESTIMONIAL ===============*/
 .testimonial__card{
