@@ -695,6 +695,7 @@ body.light-theme{
   display: flex;
   align-items: center;
   column-gap: 0.25rem;
+  margin-right: 1.5rem;
 }
 
 .work__button:hover .work__icon{
@@ -704,6 +705,11 @@ body.light-theme{
 .work__icon{
   font-size: 1rem;
   transition: 0.4s;
+}
+
+.link{
+  display: flex;
+  align-items: center;
 }
 
 /* Active item work*/
