@@ -1174,10 +1174,16 @@ body.light-theme{
 
   .work__card{    
     padding: 1.25rem;
+    cursor: pointer;
   }
 
   .work__img{
     margin-bottom: 1rem;
+    transition: 0.5s;
+  }
+
+  .work__img:hover{
+    transform: scale(1.05);
   }
 
   .work__title{
