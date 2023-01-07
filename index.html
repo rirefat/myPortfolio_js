@@ -1,312 +1,323 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--=============== BOXICONS ===============-->
-        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
-        <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
-        <title>myPortfolio: Rafiul Islam</title>
-    </head>
-    <body>
-        <!--=============== HEADER ===============-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">Rafiul</a>
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-                <div class="nav__menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">
-                                <i class='bx bxs-home'></i>
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">
-                                <i class='bx bxs-user' ></i>
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#skills" class="nav__link">
-                                <i class='bx bxs-book-open'></i> 
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#work" class="nav__link">
-                                <i class='bx bxs-briefcase' ></i>
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">
-                                <i class='bx bxs-message-square-detail'></i>
-                            </a>
-                        </li>
-                    </ul>                    
+    <title>myPortfolio: Rafiul Islam</title>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Rafiul</a>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bxs-home'></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class='bx bxs-user'></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bxs-book-open'></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">
+                            <i class='bx bxs-briefcase'></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class='bx bxs-message-square-detail'></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--========= Theme Change Button =========-->
+            <i class='bx bx-moon change-theme' id="theme-button"></i>
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main container">
+        <!--=============== HOME ===============-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <!--======================= Main Home Data =======================-->
+                <div class="home__data">
+                    <span class="home__greeting">Hello, I'm</span>
+                    <h1 class="home__name">Rafiul Islam</h1>
+                    <h3 class="home__profession">Frontend Web Developer | ReactJS Developer</h3>
+
+                    <div class="home__buttons">
+                        <a download=""
+                            href="https://drive.google.com/file/d/171V_gmyZsvyQfGNWpKbLQzJyKzdTU7yD/view?usp=sharing"
+                            target="_blank" class="button button--ghost"> Download CV</a>
+                        <a href="#about" class="button">About me</a>
+                    </div>
                 </div>
 
-                <!--========= Theme Change Button =========-->
-                <i class='bx bx-moon change-theme' id="theme-button"></i>
-            </nav>
-        </header>
+                <!--===================== Home Image =====================-->
+                <div class="home__handle">
+                    <img src="assets/img/rafiul.png" alt="Image of Rafiul Islam Refat" class="home__img">
+                </div>
 
-        <!--=============== MAIN ===============-->
-        <main class="main container">
-            <!--=============== HOME ===============-->
-            <section class="home section" id="home">
-                <div class="home__container container grid">
-                    <!--======================= Main Home Data =======================-->
-                    <div class="home__data">
-                        <span class="home__greeting">Hello, I'm</span>
-                        <h1 class="home__name">Rafiul Islam</h1>
-                        <h3 class="home__profession">Frontend Web Developer | ReactJS Developer</h3>
-
-                        <div class="home__buttons">
-                            <a download="" href="https://drive.google.com/file/d/171V_gmyZsvyQfGNWpKbLQzJyKzdTU7yD/view?usp=sharing" target="_blank" class="button button--ghost"> Download CV</a>
-                            <a href="#about" class="button">About me</a>
-                        </div>
-                    </div>
-
-                    <!--===================== Home Image =====================-->
-                    <div class="home__handle">
-                        <img src="assets/img/rafiul.png" alt="Image of Rafiul Islam Refat" class="home__img">
-                    </div>
-
-                    <!--====================== Social Links ======================-->
-                    <div class="home__social">
-                        <a href="https://github.com/rirefat" class="home__social-link" target="_blank">
-                            <i class='bx bxl-github'></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/rafiul-islam-refat-868779160/" class="home__social-link" target="_blank">
-                            <i class='bx bxl-linkedin-square' ></i>
-                        </a>
-                        <a href="https://www.facebook.com/rafiulrefat.official" class="home__social-link" target="_blank">
-                            <i class='bx bxl-facebook-circle' ></i>
-                        </a>
-                        <a href="https://twitter.com/rafiul_refat" class="home__social-link" target="_blank">
-                            <i class='bx bxl-twitter' ></i>
-                        </a>
-                    </div>
-
-                    <!--========================= Scroll To Next Section =========================-->
-                    <a href="#about" class="home__scroll">
-                        <i class='bx bx-mouse home__scroll-icon'></i>
-                        <span class="home__scroll-name">Scroll Down</span>
+                <!--====================== Social Links ======================-->
+                <div class="home__social">
+                    <a href="https://github.com/rirefat" class="home__social-link" target="_blank">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/rafiul-islam-refat-868779160/" class="home__social-link"
+                        target="_blank">
+                        <i class='bx bxl-linkedin-square'></i>
+                    </a>
+                    <a href="https://www.facebook.com/rafiulrefat.official" class="home__social-link" target="_blank">
+                        <i class='bx bxl-facebook-circle'></i>
+                    </a>
+                    <a href="https://twitter.com/rafiul_refat" class="home__social-link" target="_blank">
+                        <i class='bx bxl-twitter'></i>
                     </a>
                 </div>
-            </section>
-            
-            <!--================ ABOUT ================-->
-            <section class="about section" id="about">
-                <span class="section__subtitle">My Intro</span>
-                <h2 class="section__title">About Me</h2>
 
-                <div class="about__container contaier grid">
-                    <img src="assets/img/about_rirefat.jpg" alt="Img of Rafiul Islam" class="about__img">
+                <!--========================= Scroll To Next Section =========================-->
+                <a href="#about" class="home__scroll">
+                    <i class='bx bx-mouse home__scroll-icon'></i>
+                    <span class="home__scroll-name">Scroll Down</span>
+                </a>
+            </div>
+        </section>
 
-                    <div class="about__data">
-                        <div class="about__info">
-                            <div class="about__box">
-                                <i class='bx bxs-award about__icon' ></i>
-                                <h3 class="about__title">Experience</h3>
-                                <span class="about__subtitle">2 Years Working</span>
+        <!--================ ABOUT ================-->
+        <section class="about section" id="about">
+            <span class="section__subtitle">My Intro</span>
+            <h2 class="section__title">About Me</h2>
+
+            <div class="about__container contaier grid">
+                <img src="assets/img/about_rirefat.jpg" alt="Img of Rafiul Islam" class="about__img">
+
+                <div class="about__data">
+                    <div class="about__info">
+                        <div class="about__box">
+                            <i class='bx bxs-award about__icon'></i>
+                            <h3 class="about__title">Experience</h3>
+                            <span class="about__subtitle">2 Years Working</span>
+                        </div>
+
+                        <div class="about__box">
+                            <i class='bx bxs-briefcase-alt-2 about__icon'></i>
+                            <h3 class="about__title">Completed</h3>
+                            <span class="about__subtitle">20 + Projects</span>
+                        </div>
+
+                        <div class="about__box">
+                            <i class='bx bx-support about__icon'></i>
+                            <h3 class="about__title">Support</h3>
+                            <span class="about__subtitle">Online 24/7</span>
+                        </div>
+                    </div>
+
+                    <p class="about__description">I'm a Tech Enthusiast. I like to work with new technologies and learn
+                        new things. Doing research works and projects which includes both coding and hardware
+                        implementation are what I love to do. I believe <strong>Hard Work</strong>,
+                        <strong>Punctuality</strong>, <strong>Honesty</strong> and <strong>Dedication</strong> can lead
+                        me towards success. My career objective is to work with a progressive organization and to pursue
+                        career in a professional titled which provides me with ample opportunities to implement and best
+                        utilize my skills in a good professional environment.</p>
+
+                    <a href="#contact" class="button">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!--================ SKILLS ===============-->
+        <section class="skills section" id="skills">
+            <span class="section__subtitle">My Abilities</span>
+            <h2 class="section__title">My Experience</h2>
+
+            <div class="skills__container container grid">
+                <div class="skills__content">
+                    <h3 class="skills__title">Frontend Development</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills_name">HTML5</h3>
+                                    <span class="skills__level">Advance</span>
+                                </div>
                             </div>
 
-                            <div class="about__box">
-                                <i class='bx bxs-briefcase-alt-2 about__icon' ></i>
-                                <h3 class="about__title">Completed</h3>
-                                <span class="about__subtitle">20 + Projects</span>
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills_name">CSS3</h3>
+                                    <span class="skills__level">Advance</span>
+                                </div>
                             </div>
 
-                            <div class="about__box">
-                                <i class='bx bx-support about__icon' ></i>
-                                <h3 class="about__title">Support</h3>
-                                <span class="about__subtitle">Online 24/7</span>
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills_name">JavaScript</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills_name">Bootstrap</h3>
+                                    <span class="skills__level">Advance</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills_name">WordPress</h3>
+                                    <span class="skills__level">Advance</span>
+                                </div>
                             </div>
                         </div>
 
-                        <p class="about__description">I'm a Tech Enthusiast. I like to work with new technologies and learn new things. Doing research works and projects which includes both coding and hardware implementation are what I love to do. I believe <strong>Hard Work</strong>, <strong>Punctuality</strong>, <strong>Honesty</strong> and <strong>Dedication</strong> can lead me towards success. My career objective is to work with a progressive organization and to pursue career in a professional titled which provides me with ample opportunities to implement and best utilize my skills in a good professional environment.</p>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
 
-                        <a href="#contact" class="button">Contact Me</a>
+                                <div>
+                                    <h3 class="skills_name">TailWind</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills_name">React</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills_name">Git</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills_name">jQuery</h3>
+                                    <span class="skills__level">Basic</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </section>
 
-            <!--================ SKILLS ===============-->
-            <section class="skills section" id="skills">
-                <span class="section__subtitle">My Abilities</span>
-                <h2 class="section__title">My Experience</h2>
+                <div class="skills__content">
+                    <h3 class="skills__title">Backend Development</h3>
 
-                <div class="skills__container container grid">
-                    <div class="skills__content">
-                        <h3 class="skills__title">Frontend Development</h3>
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
 
-                        <div class="skills__box">
-                            <div class="skills__group">
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-
-                                    <div>
-                                        <h3 class="skills_name">HTML5</h3>
-                                        <span class="skills__level">Advance</span>
-                                    </div>
-                                </div>
-                                
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-
-                                    <div>
-                                        <h3 class="skills_name">CSS3</h3>
-                                        <span class="skills__level">Advance</span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-
-                                    <div>
-                                        <h3 class="skills_name">JavaScript</h3>
-                                        <span class="skills__level">Intermediate</span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-
-                                    <div>
-                                        <h3 class="skills_name">Bootstrap</h3>
-                                        <span class="skills__level">Advance</span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-
-                                    <div>
-                                        <h3 class="skills_name">WordPress</h3>
-                                        <span class="skills__level">Advance</span>
-                                    </div>
+                                <div>
+                                    <h3 class="skills_name">Node</h3>
+                                    <span class="skills__level">Basic</span>
                                 </div>
                             </div>
 
-                            <div class="skills__group">
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
 
-                                    <div>
-                                        <h3 class="skills_name">TailWind</h3>
-                                        <span class="skills__level">Intermediate</span>
-                                    </div>
+                                <div>
+                                    <h3 class="skills_name">Express</h3>
+                                    <span class="skills__level">Basic</span>
                                 </div>
+                            </div>
 
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
 
-                                    <div>
-                                        <h3 class="skills_name">React</h3>
-                                        <span class="skills__level">Intermediate</span>
-                                    </div>
+                                <div>
+                                    <h3 class="skills_name">MongoDB</h3>
+                                    <span class="skills__level">Basic</span>
                                 </div>
+                            </div>
 
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
 
-                                    <div>
-                                        <h3 class="skills_name">Git</h3>
-                                        <span class="skills__level">Intermediate</span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-
-                                    <div>
-                                        <h3 class="skills_name">jQuery</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
+                                <div>
+                                    <h3 class="skills_name">PHP</h3>
+                                    <span class="skills__level">Introduced</span>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="skills__content">
-                        <h3 class="skills__title">Backend Development</h3>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
 
-                        <div class="skills__box">
-                            <div class="skills__group">
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-
-                                    <div>
-                                        <h3 class="skills_name">Node</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-                                
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-
-                                    <div>
-                                        <h3 class="skills_name">Express</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-
-                                    <div>
-                                        <h3 class="skills_name">MongoDB</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-
-                                    <div>
-                                        <h3 class="skills_name">PHP</h3>
-                                        <span class="skills__level">Introduced</span>
-                                    </div>
+                                <div>
+                                    <h3 class="skills_name">MySQL</h3>
+                                    <span class="skills__level">Introduced</span>
                                 </div>
                             </div>
 
-                            <div class="skills__group">
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
 
-                                    <div>
-                                        <h3 class="skills_name">MySQL</h3>
-                                        <span class="skills__level">Introduced</span>
-                                    </div>
+                                <div>
+                                    <h3 class="skills_name">Firebase</h3>
+                                    <span class="skills__level">Intermediate</span>
                                 </div>
+                            </div>
 
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
 
-                                    <div>
-                                        <h3 class="skills_name">Firebase</h3>
-                                        <span class="skills__level">Intermediate</span>
-                                    </div>
+                                <div>
+                                    <h3 class="skills_name">Python</h3>
+                                    <span class="skills__level">Basic</span>
                                 </div>
+                            </div>
 
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-
-                                    <div>
-                                        <h3 class="skills_name">Python</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-
-                                <!-- <div class="skills__data">
+                            <!-- <div class="skills__data">
                                     <i class='bx bxs-badge-check' ></i>
 
                                     <div>
@@ -314,242 +325,257 @@
                                         <span class="skills__level">Basic</span>
                                     </div>
                                 </div> -->
-                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!--============== SERVICES ===============-->
-            <section class="services section">
-                <span class="section__subtitle">My services</span>
-                <h2 class="section__title">What I Offer</h2>
+        <!--============== SERVICES ===============-->
+        <section class="services section">
+            <span class="section__subtitle">My services</span>
+            <h2 class="section__title">What I Offer</h2>
 
-                <div class="services__container container grid">
-                    <div class="services__card">
-                        <h3 class="services__title">Product <br> Designer</h3>
+            <div class="services__container container grid">
+                <div class="services__card">
+                    <h3 class="services__title">Product <br> Designer</h3>
 
-                        <div class="services__button"><span>See More</span> <i class='bx bx-right-arrow-alt see_more_icon' ></i></div>
+                    <div class="services__button"><span>See More</span> <i
+                            class='bx bx-right-arrow-alt see_more_icon'></i></div>
 
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <i class='bx bx-x services__modal-close' ></i>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
 
-                                <h3 class="services__modal-title">Product Designer</h3>
-                                <p class="services__modal-description">Service with more than 3years of experience. Providing quality work to clients and companies</p>
+                            <h3 class="services__modal-title">Product Designer</h3>
+                            <p class="services__modal-description">Service with more than 3years of experience.
+                                Providing quality work to clients and companies</p>
 
-                                <ul class="services__modal-list">
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check-circle services__modal-icon' ></i>
-                                        <p class="services__modal-info">I develop user interface</p>
-                                    </li>
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check-circle services__modal-icon' ></i>
-                                        <p class="services__modal-info">I develop user interface</p>
-                                    </li>
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check-circle services__modal-icon' ></i>
-                                        <p class="services__modal-info">I develop user interface</p>
-                                    </li>
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check-circle services__modal-icon' ></i>
-                                        <p class="services__modal-info">I develop user interface</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="services__card">
-                        <h3 class="services__title">Product <br> Designer</h3>
-
-                        <div class="services__button"><span>See More</span> <i class='bx bx-right-arrow-alt see_more_icon' ></i></div>
-
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <i class='bx bx-x services__modal-close' ></i>
-
-                                <h3 class="services__modal-title">Product Designer</h3>
-                                <p class="services__modal-description">Service with more than 3years of experience. Providing quality work to clients and companies</p>
-
-                                <ul class="services__modal-list">
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check-circle services__modal-icon' ></i>
-                                        <p class="services__modal-info">I develop user interface</p>
-                                    </li>
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check-circle services__modal-icon' ></i>
-                                        <p class="services__modal-info">I develop user interface</p>
-                                    </li>
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check-circle services__modal-icon' ></i>
-                                        <p class="services__modal-info">I develop user interface</p>
-                                    </li>
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check-circle services__modal-icon' ></i>
-                                        <p class="services__modal-info">I develop user interface</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="services__card">
-                        <h3 class="services__title">Product <br> Designer</h3>
-
-                        <div class="services__button"><span>See More</span> <i class='bx bx-right-arrow-alt see_more_icon' ></i></div>
-
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <i class='bx bx-x services__modal-close' ></i>
-
-                                <h3 class="services__modal-title">Product Designer</h3>
-                                <p class="services__modal-description">Service with more than 3years of experience. Providing quality work to clients and companies</p>
-
-                                <ul class="services__modal-list">
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check-circle services__modal-icon' ></i>
-                                        <p class="services__modal-info">I develop user interface</p>
-                                    </li>
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check-circle services__modal-icon' ></i>
-                                        <p class="services__modal-info">I develop user interface</p>
-                                    </li>
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check-circle services__modal-icon' ></i>
-                                        <p class="services__modal-info">I develop user interface</p>
-                                    </li>
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check-circle services__modal-icon' ></i>
-                                        <p class="services__modal-info">I develop user interface</p>
-                                    </li>
-                                </ul>
-                            </div>
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle services__modal-icon'></i>
+                                    <p class="services__modal-info">I develop user interface</p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle services__modal-icon'></i>
+                                    <p class="services__modal-info">I develop user interface</p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle services__modal-icon'></i>
+                                    <p class="services__modal-info">I develop user interface</p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle services__modal-icon'></i>
+                                    <p class="services__modal-info">I develop user interface</p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </section>
 
-            <!--================ WORK =================-->
-            <section class="work section" id="work">
-                <span class="section__subtitle">My Portfolio</span>
-                <h2 class="section__title">Recent Works</h2>
+                <div class="services__card">
+                    <h3 class="services__title">Product <br> Designer</h3>
 
-                <div class="work__filters">
-                    <span class="work__item active-work" data-filter="all">All</span>
-                    <span class="work__item" data-filter=".psd2html">PSD to HTML</span>
-                    <span class="work__item" data-filter=".javascript">JavaScript</span>
-                    <span class="work__item" data-filter=".react">React</span>
-                    <!-- <span class="work__item" data-filter=".mern-stack">MERN Stack</span> -->
-                    <span class="work__item" data-filter=".app-module">Single Module</span>
-                    <span class="work__item" data-filter=".wordpress">WordPress</span>
+                    <div class="services__button"><span>See More</span> <i
+                            class='bx bx-right-arrow-alt see_more_icon'></i></div>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">Product Designer</h3>
+                            <p class="services__modal-description">Service with more than 3years of experience.
+                                Providing quality work to clients and companies</p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle services__modal-icon'></i>
+                                    <p class="services__modal-info">I develop user interface</p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle services__modal-icon'></i>
+                                    <p class="services__modal-info">I develop user interface</p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle services__modal-icon'></i>
+                                    <p class="services__modal-info">I develop user interface</p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle services__modal-icon'></i>
+                                    <p class="services__modal-info">I develop user interface</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="work__container container grid">
-                    <!-- PSD to HTML Projects -->
-                    <div class="work__card mix psd2html">
-                        <img src="assets/img/portfolio/coming-soon-page.png" alt="Coming Soon Countdown Page" title="Coming Soon Countdown Page" class="work__img">
-                        <h3 class="work__title">Coming Soon Countdown Page</h3>
-                        <div class="link">
-                            <a href="https://coming-soon-countdown-page.netlify.app/" target="_blank" class="work__button">
-                                Live Preview <i class='bx bx-link work__icon' ></i>
-                            </a>
-                            <a href="https://github.com/rirefat/coming-soon-countdown" target="_blank" class="work__button">
-                                Code <i class='bx bx-code-alt work__icon' ></i>
-                            </a>
-                        </div>
-                    </div> 
-                    <div class="work__card mix psd2html">
-                        <img src="assets/img/portfolio/modern-login-ui.png" alt="Modern Login Page UI" title="Modern Login Page UI" class="work__img">
-                        <h3 class="work__title">Modern Log In Page UI</h3>
-                        <div class="link">
-                            <a href="https://modern-login-ui.netlify.app/" target="_blank" class="work__button">
-                                Live Preview <i class='bx bx-link work__icon' ></i>
-                            </a>
-                            <a href="https://github.com/rirefat/modern-login-ui" target="_blank" class="work__button">
-                                Code <i class='bx bx-code-alt work__icon' ></i>
-                            </a>
-                        </div>
-                    </div> 
+                <div class="services__card">
+                    <h3 class="services__title">Product <br> Designer</h3>
 
-                    <!-- JavaScript Projects -->
-                    <div class="work__card mix javascript">
-                        <img src="assets/img/portfolio/battery-level-indicator.png" alt="Live Battery Tracker" title="Live Battery Tracker" class="work__img">
-                        <h3 class="work__title">Live Battery Tracker</h3>
-                        <div class="link">
-                            <a href="https://live-battery-percentage.netlify.app" target="_blank" class="work__button">
-                                Live Preview <i class='bx bx-link work__icon' ></i>
-                            </a>
-                            <a href="https://github.com/rirefat/battery-level-indicator" target="_blank" class="work__button">
-                                Code <i class='bx bx-code-alt work__icon' ></i>
-                            </a>
-                        </div>
-                    </div>
+                    <div class="services__button"><span>See More</span> <i
+                            class='bx bx-right-arrow-alt see_more_icon'></i></div>
 
-                    <!-- React Projects -->
-                    <div class="work__card mix react">
-                        <img src="assets/img/portfolio/fitness-studio-landing-page.png" alt="Fitness Studio Landing Page" title="Fitness Studio Landing Page" class="work__img">
-                        <h3 class="work__title">Fitness Studio Landing Page</h3>
-                        <div class="link">
-                            <a href="https://fitness-studio.netlify.app" target="_blank" class="work__button">
-                                Live Preview <i class='bx bx-link work__icon' ></i>
-                            </a>
-                            <a href="https://github.com/rirefat/fitness-studio" target="_blank" class="work__button">
-                                Code <i class='bx bx-code-alt work__icon' ></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="work__card mix react">
-                        <img src="assets/img/portfolio/weather-forecast-24.png" alt="Weather Forecast App" title="Weather Forecast App" class="work__img">
-                        <h3 class="work__title">Weather Forecast App</h3>
-                        <div class="link">
-                            <a href="https://weather-forecast24.netlify.app/" target="_blank" class="work__button">
-                                Live Preview <i class='bx bx-link work__icon' ></i>
-                            </a>
-                            <a href="https://github.com/rirefat/weather-forecast24" target="_blank" class="work__button">
-                                Code <i class='bx bx-code-alt work__icon' ></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="work__card mix react">
-                        <img src="assets/img/portfolio/eshop-admin-panel.png" alt="Shop Admin Panel" title="Shop Admin Panel" class="work__img">
-                        <h3 class="work__title">Shop Admin Panel</h3>
-                        <div class="link">
-                            <a href="https://eshop-dashboard.netlify.app/" target="_blank" class="work__button">
-                                Live Preview <i class='bx bx-link work__icon' ></i>
-                            </a>
-                            <a href="https://github.com/rirefat/shop-dashboard" target="_blank" class="work__button">
-                                Code <i class='bx bx-code-alt work__icon' ></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="work__card mix react">
-                        <img src="assets/img/portfolio/ema-john-online-shop.png" alt="Ema-John Online Shop" title="Ema-John Online Shop" class="work__img">
-                        <h3 class="work__title">Ema-John Online Shop</h3>
-                        <div class="link">
-                            <a href="https://project-emajohn.netlify.app/" target="_blank" class="work__button">
-                                Live Preview <i class='bx bx-link work__icon' ></i>
-                            </a>
-                            <a href="https://github.com/rirefat/project_emajohn" target="_blank" class="work__button">
-                                Code <i class='bx bx-code-alt work__icon' ></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="work__card mix react">
-                        <img src="assets/img/portfolio/hoobank-landing-page.png" alt="HooBank Landing Page" title="HooBank Landing Page" class="work__img">
-                        <h3 class="work__title">HooBank Landing Page</h3>
-                        <div class="link">
-                            <a href="https://hoobank.netlify.app/" target="_blank" class="work__button">
-                                Live Preview <i class='bx bx-link work__icon' ></i>
-                            </a>
-                            <a href="https://github.com/rirefat/project_hoobank" target="_blank" class="work__button">
-                                Code <i class='bx bx-code-alt work__icon' ></i>
-                            </a>
-                        </div>
-                    </div>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
 
-                    <!-- MERN Stack Projects -->
-                    <!-- <div class="work__card mix mern-stack">
+                            <h3 class="services__modal-title">Product Designer</h3>
+                            <p class="services__modal-description">Service with more than 3years of experience.
+                                Providing quality work to clients and companies</p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle services__modal-icon'></i>
+                                    <p class="services__modal-info">I develop user interface</p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle services__modal-icon'></i>
+                                    <p class="services__modal-info">I develop user interface</p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle services__modal-icon'></i>
+                                    <p class="services__modal-info">I develop user interface</p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle services__modal-icon'></i>
+                                    <p class="services__modal-info">I develop user interface</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--================ WORK =================-->
+        <section class="work section" id="work">
+            <span class="section__subtitle">My Portfolio</span>
+            <h2 class="section__title">Recent Works</h2>
+
+            <div class="work__filters">
+                <span class="work__item active-work" data-filter="all">All</span>
+                <span class="work__item" data-filter=".psd2html">PSD to HTML</span>
+                <span class="work__item" data-filter=".javascript">JavaScript</span>
+                <span class="work__item" data-filter=".react">React</span>
+                <!-- <span class="work__item" data-filter=".mern-stack">MERN Stack</span> -->
+                <span class="work__item" data-filter=".app-module">Single Module</span>
+                <span class="work__item" data-filter=".wordpress">WordPress</span>
+            </div>
+
+            <div class="work__container container grid">
+                <!-- PSD to HTML Projects -->
+                <div class="work__card mix psd2html">
+                    <img src="assets/img/portfolio/coming-soon-page.png" alt="Coming Soon Countdown Page"
+                        title="Coming Soon Countdown Page" class="work__img">
+                    <h3 class="work__title">Coming Soon Countdown Page</h3>
+                    <div class="link">
+                        <a href="https://coming-soon-countdown-page.netlify.app/" target="_blank" class="work__button">
+                            Live Preview <i class='bx bx-link work__icon'></i>
+                        </a>
+                        <a href="https://github.com/rirefat/coming-soon-countdown" target="_blank" class="work__button">
+                            Code <i class='bx bx-code-alt work__icon'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work__card mix psd2html">
+                    <img src="assets/img/portfolio/modern-login-ui.png" alt="Modern Login Page UI"
+                        title="Modern Login Page UI" class="work__img">
+                    <h3 class="work__title">Modern Log In Page UI</h3>
+                    <div class="link">
+                        <a href="https://modern-login-ui.netlify.app/" target="_blank" class="work__button">
+                            Live Preview <i class='bx bx-link work__icon'></i>
+                        </a>
+                        <a href="https://github.com/rirefat/modern-login-ui" target="_blank" class="work__button">
+                            Code <i class='bx bx-code-alt work__icon'></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- JavaScript Projects -->
+                <div class="work__card mix javascript">
+                    <img src="assets/img/portfolio/battery-level-indicator.png" alt="Live Battery Tracker"
+                        title="Live Battery Tracker" class="work__img">
+                    <h3 class="work__title">Live Battery Tracker</h3>
+                    <div class="link">
+                        <a href="https://live-battery-percentage.netlify.app" target="_blank" class="work__button">
+                            Live Preview <i class='bx bx-link work__icon'></i>
+                        </a>
+                        <a href="https://github.com/rirefat/battery-level-indicator" target="_blank"
+                            class="work__button">
+                            Code <i class='bx bx-code-alt work__icon'></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- React Projects -->
+                <div class="work__card mix react">
+                    <img src="assets/img/portfolio/fitness-studio-landing-page.png" alt="Fitness Studio Landing Page"
+                        title="Fitness Studio Landing Page" class="work__img">
+                    <h3 class="work__title">Fitness Studio Landing Page</h3>
+                    <div class="link">
+                        <a href="https://fitness-studio.netlify.app" target="_blank" class="work__button">
+                            Live Preview <i class='bx bx-link work__icon'></i>
+                        </a>
+                        <a href="https://github.com/rirefat/fitness-studio" target="_blank" class="work__button">
+                            Code <i class='bx bx-code-alt work__icon'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work__card mix react">
+                    <img src="assets/img/portfolio/weather-forecast-24.png" alt="Weather Forecast App"
+                        title="Weather Forecast App" class="work__img">
+                    <h3 class="work__title">Weather Forecast App</h3>
+                    <div class="link">
+                        <a href="https://weather-forecast24.netlify.app/" target="_blank" class="work__button">
+                            Live Preview <i class='bx bx-link work__icon'></i>
+                        </a>
+                        <a href="https://github.com/rirefat/weather-forecast24" target="_blank" class="work__button">
+                            Code <i class='bx bx-code-alt work__icon'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work__card mix react">
+                    <img src="assets/img/portfolio/eshop-admin-panel.png" alt="Shop Admin Panel"
+                        title="Shop Admin Panel" class="work__img">
+                    <h3 class="work__title">Shop Admin Panel</h3>
+                    <div class="link">
+                        <a href="https://eshop-dashboard.netlify.app/" target="_blank" class="work__button">
+                            Live Preview <i class='bx bx-link work__icon'></i>
+                        </a>
+                        <a href="https://github.com/rirefat/shop-dashboard" target="_blank" class="work__button">
+                            Code <i class='bx bx-code-alt work__icon'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work__card mix react">
+                    <img src="assets/img/portfolio/ema-john-online-shop.png" alt="Ema-John Online Shop"
+                        title="Ema-John Online Shop" class="work__img">
+                    <h3 class="work__title">Ema-John Online Shop</h3>
+                    <div class="link">
+                        <a href="https://project-emajohn.netlify.app/" target="_blank" class="work__button">
+                            Live Preview <i class='bx bx-link work__icon'></i>
+                        </a>
+                        <a href="https://github.com/rirefat/project_emajohn" target="_blank" class="work__button">
+                            Code <i class='bx bx-code-alt work__icon'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work__card mix react">
+                    <img src="assets/img/portfolio/hoobank-landing-page.png" alt="HooBank Landing Page"
+                        title="HooBank Landing Page" class="work__img">
+                    <h3 class="work__title">HooBank Landing Page</h3>
+                    <div class="link">
+                        <a href="https://hoobank.netlify.app/" target="_blank" class="work__button">
+                            Live Preview <i class='bx bx-link work__icon'></i>
+                        </a>
+                        <a href="https://github.com/rirefat/project_hoobank" target="_blank" class="work__button">
+                            Code <i class='bx bx-code-alt work__icon'></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- MERN Stack Projects -->
+                <!-- <div class="work__card mix mern-stack">
                         <img src="assets/img/work3.jpg" alt="Project Cover Page" class="work__img">
                         <h3 class="work__title">Web Design</h3>
                         <a href="#" class="work__button">
@@ -557,207 +583,238 @@
                         </a>
                     </div> -->
 
-                    <!-- Single Module Projects -->
-                    <div class="work__card mix app-module">
-                        <img src="assets/img/portfolio/cube-hover-effect.png" alt="Cube Hover Effect Project" title="Cube Hover Effect Project" class="work__img">
-                        <h3 class="work__title">Cube Hover Effect</h3>
-                        <div class="link">
-                            <a href="https://cube-hover-effects.netlify.app/" target="_blank" class="work__button">
-                                Live Preview <i class='bx bx-link work__icon' ></i>
-                            </a>
-                            <a href="https://github.com/rirefat/Cubes-Hover-Effects" target="_blank" class="work__button">
-                                Code <i class='bx bx-code-alt work__icon' ></i>
-                            </a>
-                        </div>
+                <!-- Single Module Projects -->
+                <div class="work__card mix app-module">
+                    <img src="assets/img/portfolio/cube-hover-effect.png" alt="Cube Hover Effect Project"
+                        title="Cube Hover Effect Project" class="work__img">
+                    <h3 class="work__title">Cube Hover Effect</h3>
+                    <div class="link">
+                        <a href="https://cube-hover-effects.netlify.app/" target="_blank" class="work__button">
+                            Live Preview <i class='bx bx-link work__icon'></i>
+                        </a>
+                        <a href="https://github.com/rirefat/Cubes-Hover-Effects" target="_blank" class="work__button">
+                            Code <i class='bx bx-code-alt work__icon'></i>
+                        </a>
                     </div>
-                    <div class="work__card mix app-module">
-                        <img src="assets/img/portfolio/responsive-react-navbar.png" alt="Responsive React NavbarProject" title="Responsive React NavbarProject" class="work__img">
-                        <h3 class="work__title">Responsive React Navbar</h3>
-                        <div class="link">
-                            <a href="https://react-navmenu.netlify.app" target="_blank" class="work__button">
-                                Live Preview <i class='bx bx-link work__icon' ></i>
-                            </a>
-                            <a href="https://github.com/rirefat/react-nav" target="_blank" class="work__button">
-                                Code <i class='bx bx-code-alt work__icon' ></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- WordPress Projects -->
-                    <div class="work__card mix wordpress">
-                        <img src="assets/img/portfolio/newsToday_onlineNewsPortal_by_rafiul_refat.png" alt="News Today-Online News Portal" title="News Today-Online News Portal" class="work__img">
-                        <h3 class="work__title">News Today-Online News Portal</h3>
-                        <div class="link">
-                            <a href="https://portfolio.rafiulrefat.com/newsToday/" target="_blank" class="work__button">
-                                Live Preview <i class='bx bx-link work__icon' ></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="work__card mix wordpress">
-                        <img src="assets/img/portfolio/attornial-law-firm.png" alt="Attornial Law Firm" title="Attornial Law Firm" class="work__img">
-                        <h3 class="work__title">Attornial Law Firm</h3>
-                        <div class="link">
-                            <a href="http://portfolio.rafiulrefat.com/attornal/" target="_blank" class="work__button">
-                                Live Preview <i class='bx bx-link work__icon' ></i>
-                            </a>
-                        </div>
+                </div>
+                <div class="work__card mix app-module">
+                    <img src="assets/img/portfolio/responsive-react-navbar.png" alt="Responsive React NavbarProject"
+                        title="Responsive React NavbarProject" class="work__img">
+                    <h3 class="work__title">Responsive React Navbar</h3>
+                    <div class="link">
+                        <a href="https://react-navmenu.netlify.app" target="_blank" class="work__button">
+                            Live Preview <i class='bx bx-link work__icon'></i>
+                        </a>
+                        <a href="https://github.com/rirefat/react-nav" target="_blank" class="work__button">
+                            Code <i class='bx bx-code-alt work__icon'></i>
+                        </a>
                     </div>
                 </div>
 
-                <div class="show-more-button">
-                    <button class="button" id="show-more-button">Show More</button>
-                </div>
-            </section>
-
-            <!--============= TESTIMONIALS =============-->
-            <section class="testimonial section">
-                <span class="section__subtitle">My Clients Say</span>
-                <h2 class="section__title">Testimonial</h2>
-
-                <div class="testimonial__container container swiper">
-                    <div class="swiper-wrapper">
-                        <div class="testimonial__card swiper-slide">
-                            <img src="assets/img/testimonial1.png" alt="" class="testimonial__img">
-                            <h3 class="testimonial__name">Danielle Dino</h3>
-                            <h4 class="testimonial__subtitle">Owner, WEBCASA Design Agency</h4>
-                            <p class="testimonial__description">
-                                I work with many WordPress developers for the past 10 years and it is hard to find someone with the level of skills and strict attention to details. Rafiul is very excellent to work any project.
-                            </p>
-                        </div>
-                        <div class="testimonial__card swiper-slide">
-                            <img src="assets/img/testimonial2.png" alt="" class="testimonial__img">
-                            <h3 class="testimonial__name">Olga Harradine</h3>
-                            <h4 class="testimonial__subtitle">Managing Director, Clean to Concierge</h4>
-                            <p class="testimonial__description">
-                                Rafiul is brilliant to work with. He is responsive, knowledgeable and professional. Nothing was a problem. Anything tricky – he found a way to fix it. He is extremely fluent in English and everything produced was perfect. The workflow was fast and thorough. Highly recommend!
-                            </p>
-                        </div>
-                        <div class="testimonial__card swiper-slide">
-                            <img src="assets/img/testimonial3.png" alt="" class="testimonial__img">
-                            <h3 class="testimonial__name">THEDOG Teachings</h3>
-                            <h4 class="testimonial__subtitle">Podcast Company</h4>
-                            <p class="testimonial__description">
-                                Rafiul goes above and beyond. He’s creative, enthusiastic and trustworthy. He’s done a great job with our site. Will be working with him again and again. 
-                            </p>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </section>
-
-            <!--=============== CONTACT ===============-->
-            <section class="contact section" id="contact">
-                <span class="section__subtitle">Get In Touch</span>
-                <h2 class="section__title">Contact Me</h2>
-
-                <div class="contact__container container grid">
-                    <div class="contact__content">
-                        <h3 class="contact__title">Talk To Me</h3>
-
-                        <div class="contact__info">
-                            <div class="contact__card">
-                                <i class='bx bx-mail-send contact__card-icon'></i>
-                                <h3 class="contact__card-title">Email</h3>
-                                <span class="contact__card-data">rirefat.official@gmail.com</span>
-
-                                <a href="mailto:rirefat.official@gmail.com" target="_blank" class="contact__button">
-                                    Write Me <i class='bx bx-paper-plane contact__button-icon' ></i>
-                                </a>
-                            </div>
-                            <div class="contact__card">
-                                <i class='bx bxs-phone-call contact__card-icon'></i>
-                                <h3 class="contact__card-title">Phone</h3>
-                                <span class="contact__card-data">+88 01724082287</span>
-
-                                <a href="tel:+8801724082287" target="_blank" class="contact__button">
-                                    Write Me <i class='bx bx-paper-plane contact__button-icon' ></i>
-                                </a>
-                            </div>
-                            <div class="contact__card">
-                                <i class='bx bxl-messenger contact__card-icon'></i>
-                                <h3 class="contact__card-title">Messenger</h3>
-                                <span class="contact__card-data">@rafiulrefat.official</span>
-
-                                <a href="https://m.me/rafiulrefat.official" target="_blank" class="contact__button">
-                                    Write Me <i class='bx bx-paper-plane contact__button-icon' ></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="contact__content">
-                        <h3 class="contact__title">Explain Your Project</h3>
-
-                        <form action="" class="contact__form">
-                            <div class="contact__form-div">
-                                <label for="" class="contact__form-tag">Name</label>
-                                <input type="text" required placeholder="Insert Your Name*" class="contact__form-input" id="name">
-                            </div>
-                            <div class="contact__form-div">
-                                <label for="" class="contact__form-tag">Mail</label>
-                                <input type="email" required placeholder="Insert Your Email*" class="contact__form-input" id="email">
-                            </div>
-                            <div class="contact__form-div contact__form-area">
-                                <label for="" class="contact__form-tag">Project</label>
-                                <textarea name="" id="" cols="30" rows="10" required placeholder="Write Your Project Details*" class="contact__form-input" id="project"></textarea>
-                            </div>
-
-                            <button class="button" id="msg-button">Send Message</button>
-                        </form>
+                <!-- WordPress Projects -->
+                <div class="work__card mix wordpress">
+                    <img src="assets/img/portfolio/newsToday_onlineNewsPortal_by_rafiul_refat.png"
+                        alt="News Today-Online News Portal" title="News Today-Online News Portal" class="work__img">
+                    <h3 class="work__title">News Today-Online News Portal</h3>
+                    <div class="link">
+                        <a href="https://portfolio.rafiulrefat.com/newsToday/" target="_blank" class="work__button">
+                            Live Preview <i class='bx bx-link work__icon'></i>
+                        </a>
                     </div>
                 </div>
-            </section>
-        </main>
-
-        <!--================== FOOTER ==================-->
-        <footer class="footer">
-            <div class="footer__container container">
-                <h1 class="footer__title">Rafiul</h1>
-
-                <ul class="footer__list">
-                    <li>
-                        <a href="#about" class="footer__link">About</a>
-                    </li>
-                    <li>
-                        <a href="#work" class="footer__link">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#testimonial" class="footer__link">Testimonial</a>
-                    </li>
-                </ul>
-
-                <ul class="footer__social">
-                    <a href="" target="_blank" class="footer__social-link">
-                        <i class='bx bxl-facebook' ></i>
-                    </a>
-                    <a href="" target="_blank" class="footer__social-link">
-                        <i class='bx bxl-linkedin' ></i>
-                    </a>
-                    <a href="" target="_blank" class="footer__social-link">
-                        <i class='bx bxl-twitter' ></i>
-                    </a>
-                </ul>
-
-                <span class="footer__copy">
-                    &#169; Rafiul Islam. All rights reserved. 
-                </span>
+                <div class="work__card mix wordpress">
+                    <img src="assets/img/portfolio/attornial-law-firm.png" alt="Attornial Law Firm"
+                        title="Attornial Law Firm" class="work__img">
+                    <h3 class="work__title">Attornial Law Firm</h3>
+                    <div class="link">
+                        <a href="http://portfolio.rafiulrefat.com/attornal/" target="_blank" class="work__button">
+                            Live Preview <i class='bx bx-link work__icon'></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </footer>
 
-        <!--=============== SCROLLREVEAL ===============-->
-        <script src="assets/js/scrollreveal.min.js"></script>
+            <div class="show-more-button">
+                <button class="button" id="show-more-button">Show More</button>
+            </div>
+        </section>
 
-        <!--================= SWIPER JS =================-->
-        <script src="assets//js/swiper-bundle.min.js"></script>
+        <!--============= TESTIMONIALS =============-->
+        <section class="testimonial section">
+            <span class="section__subtitle">My Clients Say</span>
+            <h2 class="section__title">Testimonial</h2>
 
-        <!--============== MIXITUP FILTER ==============-->
-        <script src="assets/js/mixitup.min.js"></script>
+            <div class="testimonial__container container swiper">
+                <div class="swiper-wrapper">
+                    <div class="testimonial__card swiper-slide">
+                        <img src="assets/img/testimonial1.png" alt="" class="testimonial__img">
+                        <h3 class="testimonial__name">Danielle Dino</h3>
+                        <h4 class="testimonial__subtitle">Owner, WEBCASA Design Agency</h4>
+                        <p class="testimonial__description">
+                            I work with many WordPress developers for the past 10 years and it is hard to find someone
+                            with the level of skills and strict attention to details. Rafiul is very excellent to work
+                            any project.
+                        </p>
+                    </div>
+                    <div class="testimonial__card swiper-slide">
+                        <img src="assets/img/testimonial2.png" alt="" class="testimonial__img">
+                        <h3 class="testimonial__name">Olga Harradine</h3>
+                        <h4 class="testimonial__subtitle">Managing Director, Clean to Concierge</h4>
+                        <p class="testimonial__description">
+                            Rafiul is brilliant to work with. He is responsive, knowledgeable and professional. Nothing
+                            was a problem. Anything tricky – he found a way to fix it. He is extremely fluent in English
+                            and everything produced was perfect. The workflow was fast and thorough. Highly recommend!
+                        </p>
+                    </div>
+                    <div class="testimonial__card swiper-slide">
+                        <img src="assets/img/testimonial3.png" alt="" class="testimonial__img">
+                        <h3 class="testimonial__name">THEDOG Teachings</h3>
+                        <h4 class="testimonial__subtitle">Podcast Company</h4>
+                        <p class="testimonial__description">
+                            Rafiul goes above and beyond. He’s creative, enthusiastic and trustworthy. He’s done a great
+                            job with our site. Will be working with him again and again.
+                        </p>
+                    </div>
+                    <div class="testimonial__card swiper-slide">
+                        <img src="assets/img/testimonial3.png" alt="" class="testimonial__img">
+                        <h3 class="testimonial__name">Vic Devore</h3>
+                        <h4 class="testimonial__subtitle">CEO, DEVOREDesign</h4>
+                        <p class="testimonial__description">
+                            Every time I need something fixed with my websites, Rafiul is my “go to” guy. He does great
+                            and gets everything done in a timely manner. Great communication. Thank you Rafiul!
+                        </p>
+                    </div>
+                    <div class="testimonial__card swiper-slide">
+                        <img src="assets/img/testimonial3.png" alt="" class="testimonial__img">
+                        <h3 class="testimonial__name">Ben Crandall</h3>
+                        <h4 class="testimonial__subtitle">Co-Founder of optimiser.com.au</h4>
+                        <p class="testimonial__description">
+                            Rafiul is a skilled, proactive, and friendly freelancer. Fast and accurate work provided for this task. Explained in terms I can understand. I will rehire Rafiul again.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
 
-        <!--================== Smtp JS =================-->
-        <script src="https://smtpjs.com/v3/smtp.js">
-        </script>
+        <!--=============== CONTACT ===============-->
+        <section class="contact section" id="contact">
+            <span class="section__subtitle">Get In Touch</span>
+            <h2 class="section__title">Contact Me</h2>
 
-        <!--================= MAIN JS ==================-->
-        <script src="assets/js/main.js"></script>
-    </body>
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <h3 class="contact__title">Talk To Me</h3>
+
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class='bx bx-mail-send contact__card-icon'></i>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">rirefat.official@gmail.com</span>
+
+                            <a href="mailto:rirefat.official@gmail.com" target="_blank" class="contact__button">
+                                Write Me <i class='bx bx-paper-plane contact__button-icon'></i>
+                            </a>
+                        </div>
+                        <div class="contact__card">
+                            <i class='bx bxs-phone-call contact__card-icon'></i>
+                            <h3 class="contact__card-title">Phone</h3>
+                            <span class="contact__card-data">+88 01724082287</span>
+
+                            <a href="tel:+8801724082287" target="_blank" class="contact__button">
+                                Write Me <i class='bx bx-paper-plane contact__button-icon'></i>
+                            </a>
+                        </div>
+                        <div class="contact__card">
+                            <i class='bx bxl-messenger contact__card-icon'></i>
+                            <h3 class="contact__card-title">Messenger</h3>
+                            <span class="contact__card-data">@rafiulrefat.official</span>
+
+                            <a href="https://m.me/rafiulrefat.official" target="_blank" class="contact__button">
+                                Write Me <i class='bx bx-paper-plane contact__button-icon'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__content">
+                    <h3 class="contact__title">Explain Your Project</h3>
+
+                    <form action="" class="contact__form">
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Name</label>
+                            <input type="text" required placeholder="Insert Your Name*" class="contact__form-input"
+                                id="name">
+                        </div>
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Mail</label>
+                            <input type="email" required placeholder="Insert Your Email*" class="contact__form-input"
+                                id="email">
+                        </div>
+                        <div class="contact__form-div contact__form-area">
+                            <label for="" class="contact__form-tag">Project</label>
+                            <textarea name="" id="" cols="30" rows="10" required
+                                placeholder="Write Your Project Details*" class="contact__form-input"
+                                id="project"></textarea>
+                        </div>
+
+                        <button class="button" id="msg-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--================== FOOTER ==================-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Rafiul</h1>
+
+            <ul class="footer__list">
+                <li>
+                    <a href="#about" class="footer__link">About</a>
+                </li>
+                <li>
+                    <a href="#work" class="footer__link">Projects</a>
+                </li>
+                <li>
+                    <a href="#testimonial" class="footer__link">Testimonial</a>
+                </li>
+            </ul>
+
+            <ul class="footer__social">
+                <a href="" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+                <a href="" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+            </ul>
+
+            <span class="footer__copy">
+                &#169; Rafiul Islam. All rights reserved.
+            </span>
+        </div>
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--================= SWIPER JS =================-->
+    <script src="assets//js/swiper-bundle.min.js"></script>
+
+    <!--============== MIXITUP FILTER ==============-->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!--================== Smtp JS =================-->
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+    <!--================= MAIN JS ==================-->
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>
