@@ -616,7 +616,7 @@ body.light-theme{
 
 .services__modal-item{
   display: flex;
-  align-items: center;
+  align-items:flex-start;
   column-gap: 0.75rem;
 }
 
