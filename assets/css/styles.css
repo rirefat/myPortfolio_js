@@ -713,6 +713,10 @@ body.light-theme{
   align-items: center;
 }
 
+.hidden-work{
+  display: none;
+}
+
 /* Active item work*/
 .active-work{
   background-color: var(--first-color);

@@ -1,5 +1,5 @@
 /*===================================== CHANGE BACKGROUND HEADER =====================================*/
-const scrollHeader = () =>{
+const scrollHeader = () => {
     const header = document.getElementById('header')
     // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
     this.scrollY >= 50 ? header.classList.add('scroll-header') : header.classList.remove('scroll-header')
@@ -9,22 +9,22 @@ window.addEventListener('scroll', scrollHeader)
 
 /*========================================== SERVICES MODAL ==========================================*/
 const modalViews = document.querySelectorAll('.services__modal');
-const modalBtns  = document.querySelectorAll('.services__button');
+const modalBtns = document.querySelectorAll('.services__button');
 const modalClose = document.querySelectorAll('.services__modal-close');
 
-const modal = (modalClick)=>{
+const modal = (modalClick) => {
     modalViews[modalClick].classList.add('active-modal')
 }
 
-modalBtns.forEach((mb, i)=>{
-    mb.addEventListener('click',()=>{
+modalBtns.forEach((mb, i) => {
+    mb.addEventListener('click', () => {
         modal(i)
     })
 })
 
-modalClose.forEach((mc)=>{
-    mc.addEventListener('click',()=>{
-        modalViews.forEach((mv)=>{
+modalClose.forEach((mc) => {
+    mc.addEventListener('click', () => {
+        modalViews.forEach((mv) => {
             mv.classList.remove('active-modal')
         })
     })
@@ -41,22 +41,22 @@ let mixerPortfolio = mixitup(".work__container", {
 });
 
 
-/*========================================= Link active work =========================================*/ 
+/*========================================= Link active work =========================================*/
 const linkWork = document.querySelectorAll('.work__item')
-function activeWork (){
-    linkWork.forEach(L=> L.classList.remove('active-work'))
+function activeWork() {
+    linkWork.forEach(L => L.classList.remove('active-work'))
     this.classList.add('active-work')
 }
 
-linkWork.forEach(L=> L.addEventListener('click', activeWork));
+linkWork.forEach(L => L.addEventListener('click', activeWork));
 
 /*======================================== SWIPER TESTIMONIAL ========================================*/
-let swiperTestimonial = new Swiper(".testimonial__container",{
+let swiperTestimonial = new Swiper(".testimonial__container", {
     spaceBetween: 24,
     loop: true,
     grabCursor: true,
 
-    pagination:{
+    pagination: {
         el: ".swiper-pagination",
         clickable: true,
     },
@@ -68,32 +68,32 @@ let swiperTestimonial = new Swiper(".testimonial__container",{
         768: {
             slidesPerView: 2,
             spaceBetween: 48,
-        },        
+        },
     },
 });
 
 /*=================================== SCROLL SECTIONS ACTIVE Link=======================================*/
 const sections = document.querySelectorAll('section[id]')
-    
-const scrollActive = () =>{
-  	const scrollY = window.pageYOffset
 
-	sections.forEach(current =>{
-		const sectionHeight = current.offsetHeight,
-			  sectionTop = current.offsetTop - 58,
-			  sectionId = current.getAttribute('id'),
-			  sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
+const scrollActive = () => {
+    const scrollY = window.pageYOffset
 
-		if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-			sectionsClass.classList.add('active-link')
-		}else{
-			sectionsClass.classList.remove('active-link')
-		}                                                    
-	})
+    sections.forEach(current => {
+        const sectionHeight = current.offsetHeight,
+            sectionTop = current.offsetTop - 58,
+            sectionId = current.getAttribute('id'),
+            sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
+
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+            sectionsClass.classList.add('active-link')
+        } else {
+            sectionsClass.classList.remove('active-link')
+        }
+    })
 }
 window.addEventListener('scroll', scrollActive)
 
-/*========================================= LIGHT DARK THEME =========================================*/ 
+/*========================================= LIGHT DARK THEME =========================================*/
 const themeButton = document.getElementById('theme-button')
 const lightTheme = 'light-theme'
 const iconTheme = 'bx-sun'
@@ -108,9 +108,9 @@ const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx bx-
 
 // We validate if the user previously chose a topic
 if (selectedTheme) {
-  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the light
-  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](lightTheme)
-  themeButton.classList[selectedIcon === 'bx bx-moon' ? 'add' : 'remove'](iconTheme)
+    // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the light
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](lightTheme)
+    themeButton.classList[selectedIcon === 'bx bx-moon' ? 'add' : 'remove'](iconTheme)
 }
 
 // Activate / deactivate the theme manually with the button
@@ -133,31 +133,41 @@ const sr = ScrollReveal({
 })
 
 sr.reveal(`.home__data`)
-sr.reveal(`.home__handle`, {delay: 700})
-sr.reveal(`.home__social, .home__scroll`, {delay: 200, origin: 'bottom'})
+sr.reveal(`.home__handle`, { delay: 700 })
+sr.reveal(`.home__social, .home__scroll`, { delay: 200, origin: 'bottom' })
 sr.reveal(`.section__subtitle`)
-sr.reveal(`.section__title`, {delay: 300,origin: 'bottom'})
+sr.reveal(`.section__title`, { delay: 300, origin: 'bottom' })
+
+
+/*================================== SHOW MORE WORKS ===================================*/
+const showWorks = () => {
+    let elements = document.getElementsByClassName('work__card');
+
+    for (let i = 0; i < elements.length; i++) {
+        elements[i].classList.remove("hidden-work");
+    }
+}
 
 
 /*===================================== SMTP JS ======================================*/
 let sendMessage = document.getElementById('msg-button')
-sendMessage.addEventListener('click', function(i){
+sendMessage.addEventListener('click', function (i) {
     i.preventDefault()
     let name = document.getElementById('name').value;
     let email = document.getElementById('email').value;
     let project = document.getElementById('project').value;
 
-    let body = 'name: ' + name + '</br> email: ' + email + '</br> project: '+project ;
+    let body = 'name: ' + name + '</br> email: ' + email + '</br> project: ' + project;
 
     Email.send({
-        Host : "smtp.gmail.com",
-        Username : "rirefat.official@gmail.com",
-        Password : "eavtxzgzxcwsayai",
-        To : 'rirefat.official@gmail.com',
-        From : email,
-        Subject : "This is the subject",
-        Body : body
+        Host: "smtp.gmail.com",
+        Username: "rirefat.official@gmail.com",
+        Password: "eavtxzgzxcwsayai",
+        To: 'rirefat.official@gmail.com',
+        From: email,
+        Subject: "This is the subject",
+        Body: body
     }).then(
-      message => alert(message)
+        message => alert(message)
     );
 })
