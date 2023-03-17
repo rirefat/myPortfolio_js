@@ -65,6 +65,14 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  /* Supported by Chrome & Opera */
+  user-select: none; 
+  /* Supported by Mozila Firefox */
+  -moz-user-select: none;
+  /* Supported by Safari */
+  -webkit-user-select: none;
+  /* Supported by Edge */
+  -ms-user-select:none;
 }
 
 html {
