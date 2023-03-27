@@ -149,4 +149,24 @@ const showWorks = () => {
 }
 
 
-/*===================================== SMTP JS ======================================*/
+/*===================================== EMAIL JS ======================================*/
+const sendEmail = () => {
+    var templateParams = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("project_description").value
+    }
+
+    emailjs.send('service_p56tc9s', 'template_1r8ik1n', templateParams)
+        .then(function (response) {
+            console.log('SUCCESS!', response.status, response.text);
+        }, function (error) {
+            console.log('FAILED...', error);
+        });
+        
+        // document.getElementById("send-message-notification").innerHTML = "Send your message successfully!";
+        alert("Send your message successfully!");
+        document.getElementById("name").value = " ";
+        document.getElementById("email").value = " ";
+        document.getElementById("project_description").value = " ";
+}

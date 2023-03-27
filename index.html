@@ -893,22 +893,21 @@
                     <form action="" class="contact__form">
                         <div class="contact__form-div">
                             <label for="" class="contact__form-tag">Name</label>
-                            <input type="text" required placeholder="Insert Your Name*" class="contact__form-input"
-                                id="name">
+                            <input type="text" required placeholder="Your Name*" class="contact__form-input" id="name">
                         </div>
                         <div class="contact__form-div">
                             <label for="" class="contact__form-tag">Mail</label>
-                            <input type="email" required placeholder="Insert Your Email*" class="contact__form-input"
+                            <input type="email" required placeholder="Your Email*" class="contact__form-input"
                                 id="email">
                         </div>
                         <div class="contact__form-div contact__form-area">
                             <label for="" class="contact__form-tag">Project</label>
-                            <textarea name="" id="" cols="30" rows="10" required
-                                placeholder="Write Your Project Details*" class="contact__form-input"
+                            <textarea name="" id="project_description" cols="30" rows="10" required
+                                placeholder="Tell Me About Your Project*" class="contact__form-input"
                                 id="project"></textarea>
                         </div>
-
-                        <button class="button" id="msg-button">Send Message</button>
+                        <p class="send-message-notification"></p>
+                        <button class="button" id="msg-button" onclick="sendEmail()">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -975,6 +974,15 @@
             rir.preventDefault();
         })
 
+    </script>
+
+    <!-- Email Js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+            (function () {
+                emailjs.init("Cl5qXRd6C9y2wxWlW");
+            })();
     </script>
 </body>
 
