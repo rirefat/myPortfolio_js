@@ -150,24 +150,3 @@ const showWorks = () => {
 
 
 /*===================================== SMTP JS ======================================*/
-let sendMessage = document.getElementById('msg-button')
-sendMessage.addEventListener('click', function (i) {
-    i.preventDefault()
-    let name = document.getElementById('name').value;
-    let email = document.getElementById('email').value;
-    let project = document.getElementById('project').value;
-
-    let body = 'name: ' + name + '</br> email: ' + email + '</br> project: ' + project;
-
-    Email.send({
-        Host: "smtp.gmail.com",
-        Username: "rirefat.official@gmail.com",
-        Password: "eavtxzgzxcwsayai",
-        To: 'rirefat.official@gmail.com',
-        From: email,
-        Subject: "This is the subject",
-        Body: body
-    }).then(
-        message => alert(message)
-    );
-})
